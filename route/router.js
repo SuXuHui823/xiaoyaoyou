@@ -1,0 +1,24 @@
+app.config(function($stateProvider,$urlRouterProvider){
+//	console.log(2)
+	$stateProvider.state("yi",{
+		url:"/yi",
+		templateUrl:"html/微游记.html",
+		controller:"Ctr"
+	})
+	.state("er",{
+		url:"/er",
+		templateUrl:"html/挑战.html",
+		controller:"Ctr1"
+	})
+	.state("san",{
+		url:"/san",
+		templateUrl:"html/微故事.html",
+		controller:"Ctr3"
+	})
+	.state("si",{
+		url:"/si",
+		templateUrl:"html/我.html",
+		controller:"Ctr2"
+	})
+	$urlRouterProvider.otherwise("/yi");
+})

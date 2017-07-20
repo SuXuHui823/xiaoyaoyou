@@ -1,0 +1,21 @@
+@charset "utf-8";
+main{
+    width: 100%;
+    .top{
+        width: 100%;
+        padding: 3% 3%;
+        height: 26rem;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            font-size: 1.2rem;
+            color: #666;
+            letter-spacing: 0.4px;
+            line-height: 1.5rem;
+            padding: 3% 3%;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}

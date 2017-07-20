@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Title</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/index.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/wyj.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/tz.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/wgs.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/w.css"/>
+</head>
+<body ng-controller="Ctr0">
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/angular-1.4.6.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js"></script>
+    <script src="route/router.js" type="text/javascript" charset="utf-8"></script>
+    <script src="controller/微游记.js" type="text/javascript" charset="utf-8"></script>
+    <script src="controller/挑战.js" type="text/javascript" charset="utf-8"></script>
+    <script src="controller/微故事.js" type="text/javascript" charset="utf-8"></script>
+	<script src="controller/我.js" type="text/javascript" charset="utf-8"></script>
+	<script src="controller/index.js" type="text/javascript" charset="utf-8"></script>
+	<div id="mb" ng-repeat="m in nav.mb">
+		<img ng-src="img/{{m.img}}" ng-click="mban()"/>
+	</div>
+    <header>
+        <div ng-repeat="h in nav.header">
+            <p><img ng-src="img/{{h.img}}" alt=""></p>
+            <p>{{h.p}}</p>
+            <p><img ng-src="img/{{h.img1}}" alt=""></p>
+        </div>
+    </header>
+    <div ui-view id="box"></div>
+    <footer>
+    	<ul>
+    		<li class="li"> 
+    			<a ui-sref="yi">
+	    			<img src="img/my_13.png"/>
+	    			<p>微游记</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a ui-sref="er">
+	    			<img src="img/my_06.png"/>
+	    			<p>挑战</p>
+	    		</a>
+    		</li>
+    		<li>+</li>
+    		<li>
+    			<a ui-sref="san">
+	    			<img src="img/my_20.png"/>
+	    			<p>微故事</p>
+	    		</a>
+    		</li>
+    		<li>
+    			<a ui-sref="si">
+	    			<img src="img/my_18.png"/>
+	    			<p>我</p>
+	    		</a>
+    		</li>
+    	</ul>
+    </footer>
+</body>
+</html>

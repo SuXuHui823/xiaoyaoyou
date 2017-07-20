@@ -1,0 +1,18 @@
+main {
+  width: 100%; }
+  main .top {
+    width: 100%;
+    padding: 3% 3%;
+    height: 26rem; }
+    main .top img {
+      width: 100%; }
+    main .top p {
+      width: 100%;
+      font-size: 1.2rem;
+      color: #666;
+      letter-spacing: 0.4px;
+      line-height: 1.5rem;
+      padding: 3% 3%;
+      border-bottom: 1px solid #ccc; }
+
+/*# sourceMappingURL=wyj.css.map */

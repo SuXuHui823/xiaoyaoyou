@@ -1,0 +1,26 @@
+.xgs_one {
+  width: 100%; }
+  .xgs_one img {
+    width: 100%; }
+  .xgs_one .xgs_bottom {
+    width: 90%;
+    margin: 0 auto;
+    height: 14rem;
+    border-bottom: 1px solid #ccc; }
+    .xgs_one .xgs_bottom p {
+      font-size: 1.5rem;
+      color: #666;
+      margin: 0 auto;
+      margin-top: 1.6rem;
+      letter-spacing: 1px;
+      width: 92%; }
+    .xgs_one .xgs_bottom p:nth-of-type(1) {
+      letter-spacing: 1.6px; }
+    .xgs_one .xgs_bottom p:last-child {
+      font-size: 1.2rem;
+      letter-spacing: 1.8px; }
+
+.xgs_one {
+  margin-top: 1.6rem; }
+
+/*# sourceMappingURL=wgs.css.map */

@@ -1,0 +1,31 @@
+@charset "utf-8";
+.xgs_one{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    .xgs_bottom{
+        width: 90%;
+        margin: 0 auto;
+        height: 14rem;
+        border-bottom: 1px solid #ccc;
+        p{
+            font-size: 1.5rem;
+            color: #666;
+            margin: 0 auto;
+            margin-top: 1.6rem;
+            letter-spacing: 1px;
+            width: 92%;
+        }
+        p:nth-of-type(1){
+            letter-spacing: 1.6px;
+        }
+        p:last-child{
+            font-size: 1.2rem;
+            letter-spacing: 1.8px;
+        }
+    }
+}
+.xgs_one{
+    margin-top: 1.6rem;
+}

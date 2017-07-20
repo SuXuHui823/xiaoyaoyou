@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--轮播-->
+		<div class="swiper-contrainer">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" ng-repeat="c in nav2.contrainer">
+					<img ng-src="img/{{c.img}}"/>
+				</div>
+			</div>
+			<div class="p"></div>
+			<div class="p1" ng-repeat="p in nav2.p1">
+				<p>{{p.p}}</p>
+				<p>{{p.p1}}</p>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--tap切换-->
+	<div class="main1">
+		<ul id="menu1" ng-repeat="n in nav2.menu">
+			<li class="li0"  ng-click="xuan()">{{n.li}}</li>
+			<li ng-click="xuan1()">{{n.li1}}</li>
+		</ul>
+		<div id="menu0">
+			<ul id="menu2">
+				<li ng-repeat="i in main.main">
+					<p>{{i.p}}</p>
+					<img ng-src="img/{{i.img}}"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>

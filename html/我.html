@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="w_top" ng-repeat="w_t in nav4.w_top">
+			<img ng-src="img/{{w_t.img}}"/>
+		</div>
+		<ul id="w_menu" ng-repeat="w_m in nav4.w_menu">
+			<li class="w_li">
+				<p>{{w_m.p1}}</p>
+			</li>
+			<li>
+				<p>{{w_m.p2}}</p>
+			</li>
+			<li>
+				<p>{{w_m.p3}}</p>
+			</li>
+		</ul>
+		<div class="w_menu1">
+			<ul>
+				<li ng-repeat="u in nav4.ul">
+					<p>{{u.p}}</p>
+					<p>{{u.p1}}</p>
+				</li>
+			</ul>
+			<ul>
+				<li ng-repeat="u in nav4.ul1">
+					<p>{{u.p}}</p>
+					<p>{{u.p1}}</p>
+				</li>
+			</ul>
+			<ul>
+				<li ng-repeat="u in nav4.ul2">
+					<p>{{u.p}}</p>
+					<p>{{u.p1}}</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
